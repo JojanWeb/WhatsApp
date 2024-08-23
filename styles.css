@@ -430,7 +430,7 @@ input#chats:not(:checked)~ .content .box__chats{
   margin: 10px;
   position: absolute;
   bottom: 60px;
-  left: 350px;
+  left: 351px;
 }
 
 .call__action:hover{
