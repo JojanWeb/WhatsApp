@@ -117,6 +117,7 @@ body {
   height: 100%;
   overflow-y: auto;
   background-color: #ece5dd;
+  position: relative;
 }
 
 .box::-webkit-scrollbar{
@@ -244,9 +245,9 @@ input#chats:not(:checked)~ .content .box__chats{
     justify-content: center;
     align-items: center;
     margin: 10px;
-    position: fixed;
-    bottom: 10px;
-    left: 785px;
+    position: absolute;
+    bottom: 60px;
+    left: 350px;
 }
 
 .chat__burbuja:hover{
@@ -310,9 +311,9 @@ input#chats:not(:checked)~ .content .box__chats{
   display: flex;
   justify-content: center;
   align-items: center;
-  position: fixed;
-  bottom: 105px;
-  left: 810px;
+  position: absolute;
+  bottom: 160px;
+  left: 370px;
   box-shadow: 0 0 4px 0 #000;
 }
 
@@ -329,9 +330,9 @@ input#chats:not(:checked)~ .content .box__chats{
 .camera__status{
   width: 70px;
   height: 70px;
-  position: fixed;
-  bottom: 20px;
-  left: 800px;
+  position: absolute;
+  bottom: 70px;
+  left: 360px;
   background-color: var(--colorVerdeBrillante);
   display: flex;
   justify-content: center;
@@ -419,17 +420,17 @@ input#chats:not(:checked)~ .content .box__chats{
 }
 
 .call__action{
-    width: 70px;
-    height: 70px;
-    background-color: var(--colorVerdeBrillante);
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 10px;
-    position: fixed;
-    bottom: 10px;
-    left: 785px;
+  width: 70px;
+  height: 70px;
+  background-color: var(--colorVerdeBrillante);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  position: absolute;
+  bottom: 60px;
+  left: 350px;
 }
 
 .call__action:hover{
