@@ -1,283 +1,214 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="whatsapp.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <title>WhatsApp</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <title>Document</title>
 </head>
 <body>
-    <div class="box">
-        <div class="header">
-            <div class="header__top">
-                <h1 class="header__titulo">WhatsApp Business</h1>
-                <div class="header__search-dots">
-                    <div class="contenedor__icono">
-                        <i class='header__icono header__icono-search bx bx-search'></i>
-                    </div>
-                    <div class="contenedor__icono">
-                        <i class='header__icono header__icono-dots bx bx-dots-vertical-rounded'></i>
-                    </div>
-                </div>
-            </div>
+  <div class="contenedor">
+    <header class="encabezado">
+      <a href="#" class="encabezado__logo">WhatsApp</a>
+      <div class="encabezado__acciones">
+        <a href="#" class="acciones__box">
+          <i class='acciones__buscar bx bx-search'></i>
+        </a>
+        <a href="#" class="acciones__box">
+          <i class='acciones__kebab bx bx-dots-vertical-rounded'></i>
+        </a>
+      </div>
+    </header>
 
-            <div class="seccion">
-                <div class="seccion__camara">
-                    <i class='seccion__icono bx bxs-camera'></i>
-                </div>
-
-                <div class="seccion__item">
-                    <p class="seccion__titulo">CHATS</p>
-                    <div class="seccion__notificacion">
-                        <p class="notificacion__texto">6</p>
-                    </div>
-                </div>
-
-                <div class="seccion__item">
-                    <p class="seccion__titulo">STATUS</p>
-                    <div class="seccion__notificacion seccion__notificacion--punto"></div>
-                </div>
-
-                <div class="seccion__item">
-                    <p class="seccion__titulo">CALLS</p>
-                </div>
-
-            </div>
+    <div class="tabs">
+      <input type="radio" id="chats" name="group" checked>
+      <input type="radio" id="status" name="group">
+      <input type="radio" id="calls" name="group">
+      <div class="secciones">
+        <div class="camera">
+          <i class='seccion__icono bx bxs-camera'></i>
         </div>
-        <div class="chat">
-            <div class="chat__item">
-                <img src="img whatsapp/image.png" alt="" class="chat__foto">
-                <div class="chat__item-column">
-                    <p class="chat__nombre">+1 312 555 1840</p>
-                    <p class="chat__mensaje">65 next week!</p>
-                </div>
-                <div class="chat__item-column">
-                    <p class="chat__hora">10:33</p>
-                    <div class="chat__notificacion">
-                        <p class="notificacion__texto">1</p>
-                    </div>
-                </div>
-            </div>
+        <div class="labels">
+          <label for="chats" class="labels__secciones">CHATS</label>
+          <label for="status" class="labels__secciones">STATUS</label>
+          <label for="calls" class="labels__secciones">CALLS</label>
+          <div class="linea"></div>
+        </div>
+      </div>
 
-            <div class="prueba">
-                <div class="chat__linea"></div>
+      <div class="content">
+        <div class="box box__chats">
+          <div class="chat chat__noleidos">
+            <div class="chat__foto">
+              <img src="img/image.jpg" alt="" class="foto__perfil">
             </div>
-
-            <div class="chat__item">
-                <img src="img whatsapp/image4.jpg" alt="" class="chat__foto">
-                <div class="chat__item-column">
-                    <p class="chat__nombre">Jhon Becerra</p>
-                    <p class="chat__mensaje">Accion de mejora.</p>
-                </div>
-                <div class="chat__item-column">
-                    <p class="chat__hora">09:50</p>
-                    <div class="chat__notificacion">
-                        <p class="notificacion__texto">2</p>
-                    </div>
-                </div>
+            <div class="chat__datos">
+              <div class="datos datos__top">
+                <p class="datos__nombre">Johan Delgado</p>
+                <p class="datos__time">10:10</p>
+              </div>
+              <div class="datos datos__bot">
+                <p class="datos__mensaje">Haga lo de Jhon</p>
+                <b class="datos__burbuja">2</b>
+              </div>
             </div>
+          </div>
+          <div class="chat__linea"></div>
 
-            <div class="prueba">
-                <div class="chat__linea"></div>
+          <div class="chat chat__leidos">
+            <div class="chat__foto">
+              <img src="img/image.jpg" alt="" class="foto__perfil">
             </div>
-
-            <div class="chat__item">
-                <img src="img whatsapp/image3.jpg" alt="" class="chat__foto">
-                <div class="chat__item-column">
-                    <p class="chat__nombre">Lisbeth Patt</p>
-                    <p class="chat__mensaje">See you tomorrow</p>
-                </div>
-                <div class="chat__item-column">
-                    <p class="chat__hora">09:30</p>
-                    <div class="chat__notificacion">
-                        <p class="notificacion__texto">4</p>
-                    </div>
-                </div>
+            <div class="chat__datos">
+              <div class="datos datos__top">
+                <p class="datos__nombre">Johan Delgado</p>
+                <p class="datos__time datos__time--gris">10:10</p>
+              </div>
+              <div class="datos datos__bot">
+                <p class="datos__mensaje">Haga lo de Jhon</p>
+              </div>
             </div>
-
-            <div class="prueba">
-                <div class="chat__linea"></div>
-            </div>
-
-            <div class="chat__item">
-                <img src="img whatsapp/image5.jpg" alt="" class="chat__foto">
-                <div class="chat__item-column">
-                    <p class="chat__nombre">Miguel Vieira</p>
-                    <p class="chat__mensaje">Shall we go out on the weekend?</p>
-                </div>
-                <div class="chat__item-column">
-                    <p class="chat__hora">08:00</p>
-                    <div class="chat__notificacion">
-                        <p class="notificacion__texto">1</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="prueba">
-                <div class="chat__linea"></div>
-            </div>
-
-            <div class="chat__item">
-                <img src="img whatsapp/image6.webp" alt="" class="chat__foto">
-                <div class="chat__item-column">
-                    <p class="chat__nombre">Cahyo Joego</p>
-                    <p class="chat__mensaje">Let's play?</p>
-                </div>
-                <div class="chat__item-column hora__leido">
-                    <p class="chat__hora chat__hora--gris">07:49</p>
-                </div>
-            </div>
-
-            <div class="prueba">
-                <div class="chat__linea"></div>
-            </div>
-
-            <div class="chat__item">
-                <img src="img whatsapp/image7.jpg" alt="" class="chat__foto">
-                <div class="chat__item-column">
-                    <p class="chat__nombre">Hello Furniture</p>
-                    <p class="chat__mensaje">We can deliver it on Thursday.</p>
-                </div>
-                <div class="chat__item-column hora__leido">
-                    <p class="chat__hora chat__hora--gris">07:20</p>
-                </div>
-            </div>
-
-            <div class="prueba">
-                <div class="chat__linea"></div>
-            </div>
-
-            <div class="chat__item">
-                <img src="img whatsapp/image2.jpg" alt="" class="chat__foto">
-                <div class="chat__item-column">
-                    <p class="chat__nombre">Alaa Bettar</p>
-                    <p class="chat__mensaje">What is your name?</p>
-                </div>
-                <div class="chat__item-column">
-                    <p class="chat__hora">06:10</p>
-                    <div class="chat__notificacion">
-                        <p class="notificacion__texto">2</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="prueba">
-                <div class="chat__linea"></div>
-            </div>
-
-            <div class="chat__item">
-                <img src="img whatsapp/image8.jpeg" alt="" class="chat__foto">
-                <div class="chat__item-column">
-                    <p class="chat__nombre">Alana</p>
-                    <p class="chat__mensaje">What did your mother say?</p>
-                </div>
-                <div class="chat__item-column hora__leido">
-                    <p class="chat__hora chat__hora--gris">06:05</p>
-                </div>
-            </div>
-
-            <div class="prueba">
-                <div class="chat__linea"></div>
-            </div>
-
-            <div class="chat__item">
-                <img src="img whatsapp/image9.avif" alt="" class="chat__foto">
-                <div class="chat__item-column">
-                    <p class="chat__nombre">Eren Jaeger</p>
-                    <p class="chat__mensaje">I am the attack titan</p>
-                </div>
-                <div class="chat__item-column hora__leido">
-                    <p class="chat__hora chat__hora--gris">05:10</p>
-                </div>
-            </div>
-
-            <div class="prueba">
-                <div class="chat__linea"></div>
-            </div>
-
-            <div class="chat__item">
-                <img src="img whatsapp/image10.jpg" alt="" class="chat__foto">
-                <div class="chat__item-column">
-                    <p class="chat__nombre">WhatsApp</p>
-                    <p class="chat__mensaje">New Updates!!!</p>
-                </div>
-                <div class="chat__item-column">
-                    <p class="chat__hora">04:00</p>
-                    <div class="chat__notificacion">
-                        <p class="notificacion__texto">10</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="prueba">
-                <div class="chat__linea"></div>
-            </div>
-
-            <div class="chat__item">
-                <img src="img whatsapp/image11.png" alt="" class="chat__foto">
-                <div class="chat__item-column">
-                    <p class="chat__nombre">Pepito</p>
-                    <p class="chat__mensaje">The new season is out</p>
-                </div>
-                <div class="chat__item-column hora__leido">
-                    <p class="chat__hora chat__hora--gris">03:50</p>
-                </div>
-            </div>
-
-            <div class="prueba">
-                <div class="chat__linea"></div>
-            </div>
-
-            <div class="chat__item">
-                <img src="img whatsapp/image11.png" alt="" class="chat__foto">
-                <div class="chat__item-column">
-                    <p class="chat__nombre">Pepito</p>
-                    <p class="chat__mensaje">The new season is out</p>
-                </div>
-                <div class="chat__item-column hora__leido">
-                    <p class="chat__hora chat__hora--gris">03:50</p>
-                </div>
-            </div>
-
-            <div class="prueba">
-                <div class="chat__linea"></div>
-            </div>
-
-            <div class="chat__item">
-                <img src="img whatsapp/image11.png" alt="" class="chat__foto">
-                <div class="chat__item-column">
-                    <p class="chat__nombre">Pepito</p>
-                    <p class="chat__mensaje">The new season is out</p>
-                </div>
-                <div class="chat__item-column hora__leido">
-                    <p class="chat__hora chat__hora--gris">03:50</p>
-                </div>
-            </div>
-
-            <div class="prueba">
-                <div class="chat__linea"></div>
-            </div>
-
-            <div class="chat__item">
-                <img src="img whatsapp/image11.png" alt="" class="chat__foto">
-                <div class="chat__item-column">
-                    <p class="chat__nombre">Pepito</p>
-                    <p class="chat__mensaje">The new season is out</p>
-                </div>
-                <div class="chat__item-column hora__leido">
-                    <p class="chat__hora chat__hora--gris">03:50</p>
-                </div>
-            </div>
-
-            <div class="prueba">
-                <div class="chat__linea"></div>
-            </div>
-
-            <div class="chat__burbuja">
+          </div>
+          <div class="chat__linea"></div>
+          
+          <div class="chat__burbuja">
                 <i class='burbuja__icono bx bxs-message-square-detail'></i>
-            </div>
+          </div>
         </div>
+
+
+
+        <div class="box box__status">
+          <div class="chat status__my">
+            <div class="chat__foto status__foto">
+              <img src="img/image.jpg" alt="" class="foto__perfil">
+              <div class="status__plus">
+                <i class='plus__icono bx bx-plus'></i>
+              </div>
+
+            </div>
+            <div class="chat__datos chat__leidos">
+              <div class="datos datos__top">
+                <p class="datos__nombre">My Status</p>
+              </div>
+              <div class="datos datos__bot">
+                <p class="datos__mensaje">Tap to add status update</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="status__recientes">Recent Updates</div>
+
+          <div class="chat status__vistos">
+            <div class="chat__foto status__foto">
+              <img src="img/image.jpg" alt="" class="foto__perfil foto__perfil--borderVerde">
+            </div>
+            <div class="chat__datos chat__leidos">
+              <div class="datos datos__top">
+                <p class="datos__nombre">Andrew</p>
+              </div>
+              <div class="datos datos__bot">
+                <p class="datos__mensaje">57 Minutes Ago</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="chat__linea chat__linea--larga"></div>
+
+          <div class="status__recientes status__recientes--titulo">Viewed Updates</div>
+
+          <div class="chat status__no-vistos">
+            <div class="chat__foto status__foto">
+              <img src="img/image.jpg" alt="" class="foto__perfil foto__perfil--borderGris">
+            </div>
+            <div class="chat__datos chat__leidos">
+              <div class="datos datos__top">
+                <p class="datos__nombre">Andrew</p>
+              </div>
+              <div class="datos datos__bot">
+                <p class="datos__mensaje">57 Minutes Ago</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="chat__lapiz">
+            <i class='lapiz__icono bx bxs-pencil'></i>
+          </div>
+
+          <div class="camera__status">
+            <i class='status__camera bx bxs-camera'></i>
+          </div>
+
+        </div>
+        
+
+
+        <div class="box box__calls">
+          <div class="chat status__no-vistos calls__create">
+            <div class="chat__foto status__foto calls__link">
+              <i class='link__icono bx bx-link-alt'></i>
+            </div>
+            <div class="chat__datos chat__leidos">
+              <div class="datos datos__top">
+                <p class="datos__nombre">Create call link</p>
+              </div>
+              <div class="datos datos__bot">
+                <p class="datos__mensaje">Share a link for your WhatsApp call</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="status__recientes">Recent</div>
+
+          <div class="chat chat__leidos">
+            <div class="chat__foto">
+              <img src="img/image.jpg" alt="" class="foto__perfil">
+            </div>
+            <div class="chat__datos chat__calls">
+              <div class="datos datos__top datos__calls datos__calls--abajo">
+                <p class="datos__nombre datos__nombre--abajo">Johan Delgado</p>
+              </div>
+              <div class="box__calls">
+                <i class='calls__icono bx bxs-phone-call' ></i>
+              </div>
+              <div class="datos datos__bot datos__calls">
+                <i class='link__icono link__icono--verde bx bx-link-alt'></i>
+                <p class="datos__mensaje">(2) 35 minutes ago</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="chat__linea"></div>
+
+          <div class="chat chat__leidos">
+            <div class="chat__foto">
+              <img src="img/image.jpg" alt="" class="foto__perfil">
+            </div>
+            <div class="chat__datos chat__calls">
+              <div class="datos datos__top datos__calls datos__calls--abajo">
+                <p class="datos__nombre datos__nombre--abajo">Johan Delgado</p>
+              </div>
+              <div class="box__calls">
+                <i class='calls__icono bx bxs-phone-call' ></i>
+              </div>
+              <div class="datos datos__bot datos__calls">
+                <i class='link__icono link__icono--rojo bx bx-link-alt'></i>
+                <p class="datos__mensaje">Today, 10:42</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="chat__linea"></div>
+
+          <div class="call__action">
+            <i class='action__icono bx bxs-phone-call' ></i>
+
+          </div>
+
+        </div>
+      </div>
     </div>
+  </div>
 </body>
 </html>

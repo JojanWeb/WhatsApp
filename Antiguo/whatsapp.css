@@ -74,7 +74,7 @@
     display: flex;
     flex-flow: column nowrap;
     width: 100%;
-    height: 700px;
+    height: 90vh;
     overflow-y: scroll;
 }
 
@@ -86,7 +86,9 @@
     justify-content: center;
     width: 100%;
     height: 65px;
-    background-color: #fff;
+    background-color: #fff; 
+    padding-bottom: 10px;
+    padding-top: 5px;
 }
 
 .chat__item-column{
@@ -115,7 +117,7 @@
 .chat__linea{
     background-color: #b4b4b4;
     height: 1px;
-    margin: 5px auto;
+    margin: 0px auto;
     width: 350px;
 }
 
