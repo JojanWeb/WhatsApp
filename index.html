@@ -9,7 +9,13 @@
 </head>
 <body>
   <div class="contenedor">
-    <header class="encabezado">
+    <div class="tabs">
+      <input type="radio" id="chat__afuera-input" name="hola">
+      <input type="radio" id="chat__adentro-input" name="hola">
+      <input type="radio" id="chats" name="group" checked>
+      <input type="radio" id="status" name="group">
+      <input type="radio" id="calls" name="group">
+      <header class="encabezado">
       <a href="#" class="encabezado__logo">WhatsApp</a>
       <div class="encabezado__acciones">
         <a href="#" class="acciones__box">
@@ -20,11 +26,6 @@
         </a>
       </div>
     </header>
-
-    <div class="tabs">
-      <input type="radio" id="chats" name="group" checked>
-      <input type="radio" id="status" name="group">
-      <input type="radio" id="calls" name="group">
       <div class="secciones">
         <div class="camera">
           <i class='seccion__icono bx bxs-camera'></i>
@@ -38,7 +39,243 @@
       </div>
 
       <div class="content">
+
         <div class="box box__chats">
+          <label id="johan" for="chat__adentro-input" class="chat chat__noleidos">
+            <div class="chat__foto">
+                <img src="img/image.jpg" alt="" class="foto__perfil">
+            </div>
+            <div class="chat__datos">
+              <div class="datos datos__top">
+                <p class="datos__nombre">Johan Delgado</p>
+                <p class="datos__time">10:10</p>
+              </div>
+              <div class="datos datos__bot">
+                <p class="datos__mensaje">Haga lo de Jhon</p>
+                <b class="datos__burbuja">2</b>
+              </div>
+            </div>
+          </label>
+
+          <div class="chat__linea"></div>
+
+          <div class="chat chat__leidos">
+            <div class="chat__foto">
+              <img src="img/image1.png" alt="" class="foto__perfil">
+            </div>
+            <div class="chat__datos">
+              <div class="datos datos__top">
+                <p class="datos__nombre">James Anderson</p>
+                <p class="datos__time datos__time--gris">7:20</p>
+              </div>
+              <div class="datos datos__bot">
+                <p class="datos__mensaje">Did you get my email?</p>
+              </div>
+            </div>
+          </div>
+          <div class="chat__linea"></div>
+
+          <div class="chat chat__noleidos">
+            <div class="chat__foto">
+              <img src="img/image2.png" alt="" class="foto__perfil">
+            </div>
+            <div class="chat__datos">
+              <div class="datos datos__top">
+                <p class="datos__nombre">Olivia Martin</p>
+                <p class="datos__time">5:50</p>
+              </div>
+              <div class="datos datos__bot">
+                <p class="datos__mensaje">I'll call you later.</p>
+                <b class="datos__burbuja">2</b>
+              </div>
+            </div>
+          </div>
+          <div class="chat__linea"></div>
+
+          <div class="chat chat__noleidos">
+            <div class="chat__foto">
+              <img src="img/image3.png" alt="" class="foto__perfil">
+            </div>
+            <div class="chat__datos">
+              <div class="datos datos__top">
+                <p class="datos__nombre">Robert Thomas</p>
+                <p class="datos__time">4:05</p>
+              </div>
+              <div class="datos datos__bot">
+                <p class="datos__mensaje">Are you free this weekend?</p>
+                <b class="datos__burbuja">2</b>
+              </div>
+            </div>
+          </div>
+          <div class="chat__linea"></div>
+
+          <div class="chat chat__noleidos">
+            <div class="chat__foto">
+              <img src="img/image4.png" alt="" class="foto__perfil">
+            </div>
+            <div class="chat__datos">
+              <div class="datos datos__top">
+                <p class="datos__nombre">Sophia Lee</p>
+                <p class="datos__time">3:30</p>
+              </div>
+              <div class="datos datos__bot">
+                <p class="datos__mensaje">Just finished the report.</p>
+                <b class="datos__burbuja">2</b>
+              </div>
+            </div>
+          </div>
+          <div class="chat__linea"></div>
+
+          <div class="chat chat__noleidos">
+            <div class="chat__foto">
+              <img src="img/image5.png" alt="" class="foto__perfil">
+            </div>
+            <div class="chat__datos">
+              <div class="datos datos__top">
+                <p class="datos__nombre">William King</p>
+                <p class="datos__time">2:50</p>
+              </div>
+              <div class="datos datos__bot">
+                <p class="datos__mensaje">Let's meet at the usual place.</p>
+                <b class="datos__burbuja">2</b>
+              </div>
+            </div>
+          </div>
+          <div class="chat__linea"></div>
+
+
+          <div class="chat chat__leidos">
+            <div class="chat__foto">
+              <img src="img/image6.png" alt="" class="foto__perfil">
+            </div>
+            <div class="chat__datos">
+              <div class="datos datos__top">
+                <p class="datos__nombre">Mia Davis</p>
+                <p class="datos__time datos__time--gris">1:40</p>
+              </div>
+              <div class="datos datos__bot">
+                <p class="datos__mensaje">I'll send the documents shortly.</p>
+              </div>
+            </div>
+          </div>
+          <div class="chat__linea"></div>
+
+          <div class="chat chat__leidos">
+            <div class="chat__foto">
+              <img src="img/image7.png" alt="" class="foto__perfil">
+            </div>
+            <div class="chat__datos">
+              <div class="datos datos__top">
+                <p class="datos__nombre">Benjamin Harris</p>
+                <p class="datos__time datos__time--gris">12:15</p>
+              </div>
+              <div class="datos datos__bot">
+                <p class="datos__mensaje">How was your trip?</p>
+              </div>
+            </div>
+          </div>
+          <div class="chat__linea"></div>
+
+          <div class="chat chat__leidos">
+            <div class="chat__foto">
+              <img src="img/image8.png" alt="" class="foto__perfil">
+            </div>
+            <div class="chat__datos">
+              <div class="datos datos__top">
+                <p class="datos__nombre">Charlotte Young</p>
+                <p class="datos__time datos__time--gris">11:45</p>
+              </div>
+              <div class="datos datos__bot">
+                <p class="datos__mensaje">I'll be late to the meeting.</p>
+              </div>
+            </div>
+          </div>
+          <div class="chat__linea"></div>
+
+          <div class="chat chat__leidos">
+            <div class="chat__foto">
+              <img src="img/image9.png" alt="" class="foto__perfil">
+            </div>
+            <div class="chat__datos">
+              <div class="datos datos__top">
+                <p class="datos__nombre">Henry Scott</p>
+                <p class="datos__time datos__time--gris">10:30</p>
+              </div>
+              <div class="datos datos__bot">
+                <p class="datos__mensaje">Thanks for your help!</p>
+              </div>
+            </div>
+          </div>
+          <div class="chat__linea"></div>
+
+          <div class="chat chat__leidos">
+            <div class="chat__foto">
+              <img src="img/image10.png" alt="" class="foto__perfil">
+            </div>
+            <div class="chat__datos">
+              <div class="datos datos__top">
+                <p class="datos__nombre">Amelia Moore</p>
+                <p class="datos__time datos__time--gris">9:55</p>
+              </div>
+              <div class="datos datos__bot">
+                <p class="datos__mensaje">Can we reschedule our call?</p>
+              </div>
+            </div>
+          </div>
+          <div class="chat__linea"></div>
+
+
+          <div class="chat chat__noleidos">
+            <div class="chat__foto">
+              <img src="img/image11.png" alt="" class="foto__perfil">
+            </div>
+            <div class="chat__datos">
+              <div class="datos datos__top">
+                <p class="datos__nombre">Alexander Taylor</p>
+                <p class="datos__time">9:15</p>
+              </div>
+              <div class="datos datos__bot">
+                <p class="datos__mensaje">I need your feedback on this.</p>
+                <b class="datos__burbuja">2</b>
+              </div>
+            </div>
+          </div>
+          <div class="chat__linea"></div>
+
+          <div class="chat chat__noleidos">
+            <div class="chat__foto">
+              <img src="img/image12.png" alt="" class="foto__perfil">
+            </div>
+            <div class="chat__datos">
+              <div class="datos datos__top">
+                <p class="datos__nombre">Evelyn Martinez</p>
+                <p class="datos__time">8:40</p>
+              </div>
+              <div class="datos datos__bot">
+                <p class="datos__mensaje">Let me know if you need anything.</p>
+                <b class="datos__burbuja">2</b>
+              </div>
+            </div>
+          </div>
+          <div class="chat__linea"></div>
+
+
+          <div class="chat chat__leidos">
+            <div class="chat__foto">
+              <img src="img/image1.png" alt="" class="foto__perfil">
+            </div>
+            <div class="chat__datos">
+              <div class="datos datos__top">
+                <p class="datos__nombre">Lucas White</p>
+                <p class="datos__time datos__time--gris">7:20</p>
+              </div>
+              <div class="datos datos__bot">
+                <p class="datos__mensaje">Did you get my email?</p>
+              </div>
+            </div>
+          </div>
+          <div class="chat__linea"></div>
+
           <div class="chat chat__noleidos">
             <div class="chat__foto">
               <img src="img/image.jpg" alt="" class="foto__perfil">
@@ -58,36 +295,37 @@
 
           <div class="chat chat__leidos">
             <div class="chat__foto">
-              <img src="img/image.jpg" alt="" class="foto__perfil">
+              <img src="img/image1.png" alt="" class="foto__perfil">
             </div>
             <div class="chat__datos">
               <div class="datos datos__top">
-                <p class="datos__nombre">Johan Delgado</p>
-                <p class="datos__time datos__time--gris">10:10</p>
+                <p class="datos__nombre">James Anderson</p>
+                <p class="datos__time datos__time--gris">7:20</p>
               </div>
               <div class="datos datos__bot">
-                <p class="datos__mensaje">Haga lo de Jhon</p>
+                <p class="datos__mensaje">Did you get my email?</p>
               </div>
             </div>
           </div>
           <div class="chat__linea"></div>
 
-          <div class="chat chat__noleidos">
+          <div class="chat chat__leidos">
             <div class="chat__foto">
-              <img src="img/image.jpg" alt="" class="foto__perfil">
+              <img src="img/image1.png" alt="" class="foto__perfil">
             </div>
             <div class="chat__datos">
               <div class="datos datos__top">
-                <p class="datos__nombre">Johan Delgado</p>
-                <p class="datos__time">10:10</p>
+                <p class="datos__nombre">James Anderson</p>
+                <p class="datos__time datos__time--gris">7:20</p>
               </div>
               <div class="datos datos__bot">
-                <p class="datos__mensaje">Haga lo de Jhon</p>
-                <b class="datos__burbuja">2</b>
+                <p class="datos__mensaje">Did you get my email?</p>
               </div>
             </div>
           </div>
           <div class="chat__linea"></div>
+
+          <!-- ----------------------------------- -->
           
           <div class="chat__burbuja">
                 <i class='burbuja__icono bx bxs-message-square-detail'></i>
@@ -224,8 +462,50 @@
           </div>
 
         </div>
+
+        <div class="chatbox">
+            <div class="encabezado chatbox__header">
+              <label for="chat__afuera-input" class="header__flecha">
+                <i class='flecha__icono bx bx-left-arrow-alt'></i>
+              </label>
+              <div class=" header__foto">
+                <img src="img/image.jpg" alt="" class="foto__perfil">
+              </div>
+              <div class="header__datos">
+                <p class="datos__nombre">Johan Delgado</p>
+                <p class="datos__estado">Online</p>
+              </div>
+              <div class="header__acciones">
+                <div class="acciones acciones__videollamada">
+                  <i class='bx bxs-video' ></i>
+                </div>
+                <div class="acciones acciones__llamar">
+                  <i class='bx bxs-phone-call' ></i>
+                </div>
+                <div class="acciones acciones__dots">
+                  <i class='bx bx-dots-vertical-rounded'></i>
+                </div>
+              </div>
+            </div>
+            <div class="chatbox__body">
+            <div class="body__mensaje">
+              <p class="mensaje__texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ratione et fuga nesciunt totam dicta eaque, quia exercitationem fugiat beatae. Dolorum earum vel quam placeat magnam eveniet mollitia doloribus pariatur.</p>
+              <p class="mensaje__time">7:30</p>
+            </div>
+
+            <div class="body__below">
+              <div class="below__textarea">
+
+                <textarea name="" id=""></textarea>
+              </div>
+              <div class="below__audio">
+
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
 </body>
 </html>

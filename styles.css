@@ -24,6 +24,7 @@ body {
   margin: 0 auto;
   max-width: 450px;
   height: 100vh;
+  position: relative;
 }
 
 .encabezado > a, .encabezado__acciones > a{
@@ -106,7 +107,7 @@ body {
 .content{
   position: relative;
   width: calc(450px * 3);
-  height: 900px;
+  height: 800px;
   display: flex;
   overflow: hidden;
 }
@@ -117,7 +118,6 @@ body {
   height: 100%;
   overflow-y: auto;
   background-color: #ece5dd;
-  position: relative;
 }
 
 .box::-webkit-scrollbar{
@@ -133,29 +133,15 @@ body {
   background: transparent;
 }
 
-.tabs input#chats:checked~ .content{
-  left: calc(450px * 0);
-}
-
-input#chats:not(:checked)~ .content .box__chats{
-  display: none;
-}
-
-.tabs input#status:checked~ .content{
-  left: calc(450px * 0);
-}
-
-.tabs input#status:not(:checked)~ .content .box__status{
-  display: none;
-}
-
+.tabs input#chats:checked~ .content,
+.tabs input#status:checked~ .content,
 .tabs input#calls:checked~ .content{
-  left: calc(450px * 0);
+  left: 0;
 }
 
-
-
-.tabs input#calls:not(input#calls:checked)~ .content .box__calls{
+.tabs input#chats:not(:checked)~ .content .box__chats,
+.tabs input#calls:not(input#calls:checked)~ .content .box__calls,
+.tabs input#status:not(:checked)~ .content .box__status{
   display: none;
 }
 
@@ -175,8 +161,10 @@ input#chats:not(:checked)~ .content .box__chats{
 }
 
 .foto__perfil{
-  width: 75%;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
+  object-fit: cover;
 }
 
 .chat{
@@ -246,7 +234,7 @@ input#chats:not(:checked)~ .content .box__chats{
     align-items: center;
     margin: 10px;
     position: absolute;
-    bottom: 60px;
+    bottom: 20px;
     left: 350px;
 }
 
@@ -440,4 +428,74 @@ input#chats:not(:checked)~ .content .box__chats{
 .action__icono{
     font-size: 35px;
     color: var(--colorBlanco);
+}
+
+.chatbox{
+  width: 450px;
+  height: 800px;
+}
+
+.tabs #chat__adentro-input:not(:checked)~ .content .chatbox{
+  display: none;
+}
+
+.tabs #chat__adentro-input:checked~ .content .box__chats,
+.tabs #chat__adentro-input:checked~ .encabezado,
+.tabs #chat__adentro-input:checked~ .secciones{
+  display: none;
+}
+
+.chatbox__header{
+  display: flex;
+  align-items: center;
+}
+
+.header__acciones{
+  display: flex;
+  align-items: center;
+}
+
+.header__acciones{
+  font-size: 25px;
+}
+
+.header__flecha{
+  font-size: 35px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--colorBlanco);
+  margin: 0 10px;
+}
+
+.header__flecha:hover{
+  background-color: var(--colorVerdeOscuro-hover);
+}
+
+.header__datos{
+  width: 45%;
+  margin: 0 5px;
+}
+
+.acciones{
+  padding: 8px;
+  margin: 0 3px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--colorBlanco);
+}
+
+.acciones:hover{
+  background-color: var(--colorVerdeOscuro-hover);
+}
+
+.header__foto{
+  margin-left: 0;
+}
+
+.tabs #chat__afuera-input:checked~ .content .chatbox{
+  display: none;
 }
