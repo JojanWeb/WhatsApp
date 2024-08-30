@@ -10,11 +10,11 @@
 <body>
   <div class="contenedor">
     <div class="tabs">
-      <input type="radio" id="chat__afuera-input" name="hola">
-      <input type="radio" id="chat__adentro-input" name="hola">
-      <input type="radio" id="chats" name="group" checked>
-      <input type="radio" id="status" name="group">
-      <input type="radio" id="calls" name="group">
+      <input type="radio" id="chat__afuera-input" name="hola" class="input-ocultos">
+      <input type="radio" id="chat__adentro-input" name="hola" class="input-ocultos">
+      <input type="radio" id="chats" name="group" checked class="input-ocultos">
+      <input type="radio" id="status" name="group" class="input-ocultos">
+      <input type="radio" id="calls" name="group" class="input-ocultos">
       <header class="encabezado">
       <a href="#" class="encabezado__logo">WhatsApp</a>
       <div class="encabezado__acciones">
@@ -52,7 +52,7 @@
               </div>
               <div class="datos datos__bot">
                 <p class="datos__mensaje">Haga lo de Jhon</p>
-                <b class="datos__burbuja">2</b>
+                <b class="datos__burbuja">1</b>
               </div>
             </div>
           </label>
@@ -357,11 +357,11 @@
 
           <div class="chat status__vistos">
             <div class="chat__foto status__foto">
-              <img src="img/image.jpg" alt="" class="foto__perfil foto__perfil--borderVerde">
+              <img src="img/image1.png" alt="" class="foto__perfil foto__perfil--borderVerde">
             </div>
             <div class="chat__datos chat__leidos">
               <div class="datos datos__top">
-                <p class="datos__nombre">Andrew</p>
+                <p class="datos__nombre">James Anderson</p>
               </div>
               <div class="datos datos__bot">
                 <p class="datos__mensaje">57 Minutes Ago</p>
@@ -375,14 +375,14 @@
 
           <div class="chat status__no-vistos">
             <div class="chat__foto status__foto">
-              <img src="img/image.jpg" alt="" class="foto__perfil foto__perfil--borderGris">
+              <img src="img/image10.png" alt="" class="foto__perfil foto__perfil--borderGris">
             </div>
             <div class="chat__datos chat__leidos">
               <div class="datos datos__top">
-                <p class="datos__nombre">Andrew</p>
+                <p class="datos__nombre">Amelia Moore</p>
               </div>
               <div class="datos datos__bot">
-                <p class="datos__mensaje">57 Minutes Ago</p>
+                <p class="datos__mensaje">Yesterday</p>
               </div>
             </div>
           </div>
@@ -438,11 +438,11 @@
 
           <div class="chat chat__leidos">
             <div class="chat__foto">
-              <img src="img/image.jpg" alt="" class="foto__perfil">
+              <img src="img/image8.png" alt="" class="foto__perfil">
             </div>
             <div class="chat__datos chat__calls">
               <div class="datos datos__top datos__calls datos__calls--abajo">
-                <p class="datos__nombre datos__nombre--abajo">Johan Delgado</p>
+                <p class="datos__nombre datos__nombre--abajo">Charlotte Young</p>
               </div>
               <div class="box__calls">
                 <i class='calls__icono bx bxs-phone-call' ></i>
@@ -472,7 +472,7 @@
                 <img src="img/image.jpg" alt="" class="foto__perfil">
               </div>
               <div class="header__datos">
-                <p class="datos__nombre">Johan Delgado</p>
+                <p class="datos__nombre-chat">Johan Delgado</p>
                 <p class="datos__estado">Online</p>
               </div>
               <div class="header__acciones">
@@ -488,21 +488,45 @@
               </div>
             </div>
             <div class="chatbox__body">
-            <div class="body__mensaje">
-              <p class="mensaje__texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ratione et fuga nesciunt totam dicta eaque, quia exercitationem fugiat beatae. Dolorum earum vel quam placeat magnam eveniet mollitia doloribus pariatur.</p>
-              <p class="mensaje__time">7:30</p>
-            </div>
+              <div class="body__box-mensajes">
+                <div class="body__mensaje">
+                  <p class="mensaje__texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ratione et fuga nesciunt totam dicta eaque, quia exercitationem fugiat beatae. Dolorum earum vel quam placeat magnam eveniet mollitia doloribus pariatur.</p>
+                  <p class="mensaje__time">7:30</p>
+                </div>
 
-            <div class="body__below">
-              <div class="below__textarea">
+                <div class="body__mensaje body__mensaje--fondoVerde">
+                  <p class="mensaje__texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ratione et fuga nesciunt totam dicta eaque..</p>
+                  <p class="mensaje__time">8:30</p>
+                </div>
 
-                <textarea name="" id=""></textarea>
+                <div class="body__mensaje body__mensaje--pequeño">
+                  <p class="mensaje__texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ratione et fuga nesciunt totam di.</p>
+                  <p class="mensaje__time">9:30</p>
+                </div>
               </div>
-              <div class="below__audio">
 
+
+              <div class="body__below">
+                <div class="below__textarea">
+                  <div class="textarea__emote">
+                    <i class='icons__textarea emote__icono bx bx-happy-alt'></i>
+                  </div>
+
+                  <input type="text" placeholder="Message" class="textarea__mensaje">
+                  
+                  <div class="textarea__clip">
+                    <i class='icons__textarea clip__icono bx bx-paperclip'></i>
+                  </div>
+
+                  <div class="textarea__camera">
+                    <i class='icons__textarea camera__icono bx bxs-camera' ></i>
+                  </div>
+                </div>
+                <div class="below__audio">
+                  <i class='audio__icono bx bxs-microphone' ></i>
+                </div>
               </div>
             </div>
-          </div>
           </div>
         </div>
       </div>
